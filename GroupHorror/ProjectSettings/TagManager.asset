@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Underwater
   - Enemy
+  - Air
+  - Console
+  - Inventory
   layers:
   - Default
   - TransparentFX
@@ -17,7 +20,7 @@ TagManager:
   - Enemy
   - Radar
   - Radar2
-  - 
+  - AirRefill
   - 
   - 
   - 

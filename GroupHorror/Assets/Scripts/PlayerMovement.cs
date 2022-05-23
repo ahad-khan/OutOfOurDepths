@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -29,8 +30,36 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
 
 
+    ////////////////////////
+    Collider[] HitObjects;
+    public Transform Punch;
+    public float PunchRange = 1.0f;
+    public LayerMask Enemies;
+    public LayerMask AirObject;
 
+    public GameObject FlashLight;
+    Light light;
 
+    float timer = 1;
+    int FlickerNum = 2;
+    int count = 0;
+    float FlickerTimer = 0.1f;
+    bool LightState = true;
+
+    float InteractTimer = 3.0f;
+    bool interacting = false;
+
+    public GameObject DOOR;
+
+    public bool IsConsole = false;
+    public Slider InteractSlider;
+    ////////////////////////
+
+    private void Start()
+    {
+        light = FlashLight.GetComponent<Light>();
+        InteractSlider.gameObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -55,6 +84,121 @@ public class PlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHight * -2f * gravity);
         }
+
+        ///////////////////////////////////////////////////
+        if (Input.GetMouseButtonDown(0))
+        {
+            HitObjects = Physics.OverlapSphere(Punch.position, PunchRange, Enemies);
+            foreach (var hit in HitObjects)
+            {
+                hit.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
+            }
+        }
+        if (Input.GetMouseButton(1))
+        {
+
+
+            HitObjects = Physics.OverlapSphere(Punch.position, PunchRange, AirObject);
+            foreach (var hit in HitObjects)
+            {
+                if (hit.gameObject.layer == LayerMask.NameToLayer("AirRefill")) { interacting = true; IsConsole = false; }
+                if (hit.gameObject.tag == "Console") { interacting = true; IsConsole = true; }
+            }
+
+
+            if (interacting == true)
+            {
+                InteractSlider.gameObject.SetActive(true);
+                if (InteractTimer > 0)
+                {
+                    InteractTimer = InteractTimer - Time.deltaTime;
+                    InteractSlider.value = InteractTimer;
+                }
+                if (InteractTimer <= 0)
+                {
+                    if (IsConsole == false)
+                    {
+                        GetComponent<Oxygen>().ChangeOxygenValue(100);
+                    }
+                    else if (IsConsole == true && GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().KeyCount == 4)
+                    {
+                        DOOR.SetActive(false);
+                    }
+
+                    InteractSlider.gameObject.SetActive(false);
+                    interacting = false;
+                    IsConsole = false;
+                }
+
+            }
+            else
+            {
+                InteractTimer = 3;
+                InteractSlider.gameObject.SetActive(false);
+                interacting = false;
+                IsConsole = false;
+            }
+
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            InteractTimer = 3;
+            InteractSlider.gameObject.SetActive(false);
+            interacting = false;
+            IsConsole = false;
+        }
+        if (Input.GetKeyDown("e"))
+        {
+            if (light.enabled == true)
+            {
+                light.enabled = false;
+                LightState = false;
+            }
+            else
+            {
+                light.enabled = true;
+                LightState = true;
+            }
+        }
+
+        if (timer > 0)
+        {
+            timer = timer - Time.deltaTime;
+        }
+
+        if (LightState == true && timer < 0)
+        {
+            if (FlickerTimer > 0)
+            {
+                FlickerTimer = FlickerTimer - Time.deltaTime;
+            }
+            if (count < FlickerNum && FlickerTimer < 0)
+            {
+                count++;
+                light.intensity = 0.5f;
+                if (light.enabled == true)
+                {
+                    light.enabled = false;
+                }
+                else
+                {
+                    light.enabled = true;
+                }
+                FlickerTimer = 0.1f;
+            }
+            if (count == FlickerNum && FlickerTimer < 0)
+            {
+                if (LightState == true && light.enabled == false)
+                {
+                    light.enabled = true;
+                }
+                light.intensity = 2;
+                count = 0;
+                FlickerNum = Random.Range(5, 10);
+                timer = Random.Range(5f, 20f);
+            }
+        }
+        ///////////////////////////////////////////////////
 
         velocity.y += gravity * Time.deltaTime;
 

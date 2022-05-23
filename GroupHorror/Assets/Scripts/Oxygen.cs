@@ -24,25 +24,31 @@ public class Oxygen : MonoBehaviour
     }
     void OnTriggerStay(Collider col)
     {
-        if (col.tag == "Underwater") //Loops while player is in trigger tagged "Underwater"
+        if (col.tag == "Air") //Loops while player is in trigger tagged "Underwater"
         {
             underwater = true;
-            if (oxygenCounter > 0) oxygenCounter -= Time.deltaTime * underwaterDecreaseRate; //decreases oxygen by underwaterDecreaseRate per second
+            /*if (oxygenCounter > 0) */oxygenCounter += Time.deltaTime * underwaterIncreaseRate; //decreases oxygen by underwaterDecreaseRate per second
             slider.value = oxygenCounter;
         }
     }
     void OnTriggerExit(Collider col)
     {
-        if (col.tag == "Underwater") underwater = false; 
+        if (col.tag == "Air") underwater = false; 
     }
     void Update()
     {
-        if (!underwater && oxygenCounter < 100)
+        oxygenCounter = Mathf.Clamp(oxygenCounter, 0, maxOxygen);
+        if (!underwater /* && oxygenCounter < 100*/)
         {
-            oxygenCounter += Time.deltaTime * underwaterIncreaseRate;
+            oxygenCounter -= Time.deltaTime * underwaterDecreaseRate;
             slider.value = oxygenCounter;
         }
     }
 
-    
+
+    public void ChangeOxygenValue(float newvalue)
+    {
+
+        oxygenCounter = Mathf.Clamp(newvalue, 0, 100.0f);
+    }
 }
