@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerState : MonoBehaviour
 {
-    [SerializeField]
-    private HarpoonGun harpoonGun;
     [SerializeField]
     private Oxygen oxygen;
 
@@ -24,28 +23,35 @@ public class PlayerState : MonoBehaviour
     {
         health = Mathf.Clamp(health, 0, maxHealth);
     }
-    void OnCollisionEnter(Collider col)
+    void OnCollisionEnter(Collision col)
     {
-        if (col.tag == "Enemy") //Loops while player is in trigger tagged "Underwater"
+        Debug.Log(col.collider.name+" AND "+col.collider.tag);
+        if (col.collider.tag == "Enemy") //Loops while player is in trigger tagged "Underwater"
         {
-            health -= Time.deltaTime * underwaterDamage;
+            health -= col.gameObject.GetComponent<EnemyBehaviour>().attackDamage;
         }
     }
-    void OnTriggerEnter(Collider col)
+    private void OnTriggerEnter(Collider other)
     {
-        if (col.tag == "Harpoon")
+        if(other.tag == "WinArea")
         {
-            harpoonGun.harpoonCounter++;
-            Destroy(col.gameObject);
+            SceneManager.LoadScene("WinScene");
         }
     }
- 
+
     void Update()
     {
+        health = Mathf.Clamp(health, 0, maxHealth);
         if (oxygen.oxygenCounter <= 0 && health > 0)
         {
             health -= Time.deltaTime * underwaterDamage;
         }
         slider.value = health;
+
+        if(health <= 0)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("DeathScene");
+        }
     }
 }

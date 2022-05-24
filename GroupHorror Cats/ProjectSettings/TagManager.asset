@@ -9,8 +9,7 @@ TagManager:
   - Air
   - Console
   - Inventory
-  - Harpoon
-  - Environment
+  - WinArea
   layers:
   - Default
   - TransparentFX
@@ -23,8 +22,8 @@ TagManager:
   - Radar
   - Radar2
   - AirRefill
-  - Harpoon
-  - Holding
+  - 
+  - 
   - 
   - 
   - 

@@ -19,10 +19,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (KeyCount == 4)
-        {
-            Debug.Log("GOT ALL KEYS");
-        }
+
     }
 
     public void PickUpKey()

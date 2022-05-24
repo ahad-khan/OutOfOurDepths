@@ -7,8 +7,7 @@ public class EnemyBehaviour : MonoBehaviour
 {
     public GameObject Player;
     public GameObject Sight;
-    [SerializeField]
-    private float SightRange = 30f;
+    float SightRange = 50f;
     RaycastHit hit;
 
     NavMeshAgent agent;
@@ -16,8 +15,9 @@ public class EnemyBehaviour : MonoBehaviour
 
     Vector3 temp;
     Vector3 centrepos;
-    private bool isAttached = false;
     public bool IsSmall = false;
+
+    public int attackDamage = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +34,6 @@ public class EnemyBehaviour : MonoBehaviour
         if (!IsSmall)
         {
             centrepos = Player.transform.position;
-            if (Vector3.Distance(transform.position, Player.transform.position) < 0.5f)
-            {
-                isAttached = true;
-
-            }
         }
         if (Physics.Raycast(Sight.transform.position, (Player.transform.position - Sight.transform.position), out hit, SightRange))
         {
