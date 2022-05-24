@@ -33,10 +33,10 @@ public class Radar2 : MonoBehaviour
         //transform.eulerAngles -= new Vector3(0, 0, rotationSpeed * Time.deltaTime);
         float rotation = (transform.eulerAngles.y % 360) - 180;
 
-        //new Vector3(Mathf.Cos(( * (Mathf.PI/180f)), Mathf.Sin()));
-        if(lastRotation <0 && rotation >= 0) collidedList.Clear();
 
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * radarDistance, Color.yellow);
+        if(lastRotation <0 && rotation >= 0) collidedList.Clear();
+        //RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector3(Mathf.Cos(mast.eulerAngles.z * (Mathf.PI/180f)), Mathf.Sin(mast.eulerAngles.z * (Mathf.PI/180f))), radarDistance);
+        //Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * radarDistance, Color.yellow);
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.down), out hit, radarDistance))
         {
             if (hit.collider.tag == "Enemy" && !collidedList.Contains(hit.collider))
