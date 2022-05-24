@@ -16,6 +16,8 @@ public class EnemyBehaviour : MonoBehaviour
     Vector3 temp;
     Vector3 centrepos;
     public bool IsSmall = false;
+
+    public int attackDamage = 100;
     // Start is called before the first frame update
     void Start()
     {

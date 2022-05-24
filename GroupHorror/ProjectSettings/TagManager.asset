@@ -9,6 +9,7 @@ TagManager:
   - Air
   - Console
   - Inventory
+  - WinArea
   layers:
   - Default
   - TransparentFX
