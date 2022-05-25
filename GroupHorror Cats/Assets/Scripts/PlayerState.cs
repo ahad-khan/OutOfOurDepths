@@ -31,6 +31,12 @@ public class PlayerState : MonoBehaviour
     [SerializeField]
     private GameObject grabbedEnemy;
 
+    public AudioSource source;
+    public AudioClip pickup;
+
+    public GameObject Player;
+    Vector3 Lastpos;
+
     void Start()
     {
         health = Mathf.Clamp(health, 0, maxHealth);
@@ -49,14 +55,31 @@ public class PlayerState : MonoBehaviour
             }
         }
     }
+    private void OnCollisionStay(Collision col)
+    {
+        if (col.collider.tag == "Ladder")
+        {
+            Debug.Log("HIT HIT HIT");
+            Lastpos = Player.transform.position;
+            if (Player.GetComponent<PlayerMovement>().move != new Vector3(0, 0, 0))
+            {
+                Debug.Log("LADDER LADDER LADDER");
+                //Player.GetComponent<CharacterController>().Move(new Vector3(0, 50, 0) * Time.deltaTime);
+                Player.GetComponent<PlayerMovement>().velocity.y = 4f;
+            }
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "WinArea")
         {
+            Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("WinScene");
         }
         if(other.tag == "Harpoon")
         {
+            source.clip = pickup;
+            source.Play();
             harpoonGun.harpoonCounter++;
             Destroy(other.gameObject);
         }
@@ -67,6 +90,12 @@ public class PlayerState : MonoBehaviour
         if(isGrabbed)
         {
 
+        }
+
+        if (health <= 0)
+        {
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("DeathScene");
         }
 
         health = Mathf.Clamp(health, 0, maxHealth);
@@ -82,10 +111,6 @@ public class PlayerState : MonoBehaviour
         if(health < 25)cracks.texture = crackTextures[2];
 
 
-        if(health <= 0)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("DeathScene");
-        }
+        
     }
 }
