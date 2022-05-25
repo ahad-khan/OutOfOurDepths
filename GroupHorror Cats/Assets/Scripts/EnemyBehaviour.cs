@@ -61,10 +61,5 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawSphere(Sight.transform.position, SightRange);
-    }
 }
 
