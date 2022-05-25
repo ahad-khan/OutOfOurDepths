@@ -1,18 +1,18 @@
 ![GAME LOGO](https://github.com/ahad-khan/OutOfOurDepths/blob/main/banner_test.png?raw=true)
 
 
-* A short first-person horror survival game created in Unity, set in the depths of the pacific within a sunken research facility, using PSX aesthetics. * 
+*A short first-person horror survival game created in Unity, set in the depths of the pacific within a sunken research facility, using PSX aesthetics. * 
 
 ## Welcome to the depths...
-* You play as a researcher working at a government facility near the outskirts of the pacific. Calamity strikes. You fall 2000 feet deep, reality morphs, questions arise, and the darkest depths hold the most horrid truths. Can you survive?*
+*You play as a researcher working at a government facility near the outskirts of the pacific. Calamity strikes. You fall 2000 feet deep, reality morphs, questions arise, and the darkest depths hold the most horrid truths. Can you survive?*
 
 ## Description
-* Out of Our Depths is a short first-person survival horror created in Unity, playing on the thalassophobia tropes of the genre as well as the environmental storytelling of the genre's origins.  *
+*Out of Our Depths is a short first-person survival horror created in Unity, playing on the thalassophobia tropes of the genre as well as the environmental storytelling of the genre's origins.  *
   
-* This game was created by students from University of Lincoln: Ahad Khan, Archie Minney, Max Truswell, Phoebe Mansfield and Rowan Halliwell for a Team Software Engineering Project.*
+*This game was created by students from University of Lincoln: Ahad Khan, Archie Minney, Max Truswell, Phoebe Mansfield and Rowan Halliwell for a Team Software Engineering Project.*
 
 ## Controls
-* MOVEMENT = WASD  
+*MOVEMENT = WASD  
 CAMERA = MOUSE  
 ATTACK = LEFT CLICK  
 INTERACT = RIGHT CLICK  
