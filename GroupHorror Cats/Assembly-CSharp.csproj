@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\HarpoonGun.cs" />
     <Compile Include="Assets\Scripts\PlayerState.cs" />
     <Compile Include="Assets\Scripts\TestScripts\pauseMenu.cs" />
+    <Compile Include="Assets\Scripts\EnemyAudioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

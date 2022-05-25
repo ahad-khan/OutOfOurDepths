@@ -15,7 +15,7 @@ E:/HorrorGamePrototype/GroupHorror Cats
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55603
+55493
 Successfully changed project path to: E:/HorrorGamePrototype/GroupHorror Cats
 E:/HorrorGamePrototype/GroupHorror Cats
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ E:/HorrorGamePrototype/GroupHorror Cats
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 81.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.19 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
 [Subsystems] Discovering subsystems at path C:/Program Files/UnityEditors/2021.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -63,92 +63,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/UnityEditors/2021.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/UnityEditors/2021.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/UnityEditors/2021.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/UnityEditors/2021.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/UnityEditors/2021.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008348 seconds.
+Registered in 0.008036 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 81.31 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 85.63 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.752 seconds
+- Completed reload, in  0.742 seconds
 Domain Reload Profiling:
-	ReloadAssembly (753ms)
-		BeginReloadAssembly (95ms)
+	ReloadAssembly (743ms)
+		BeginReloadAssembly (82ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (531ms)
-			LoadAssemblies (91ms)
+		EndReloadAssembly (536ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (127ms)
+			SetupTypeCache (123ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (310ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (324ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (63ms)
+				InitializePlatformSupportModulesInManaged (73ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
+				RefreshPlugins (87ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (111ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				ProcessInitializeOnLoadAttributes (113ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004233 seconds.
+Registered in 0.004122 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image E:\HorrorGamePrototype\GroupHorror Cats\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image E:\HorrorGamePrototype\GroupHorror Cats\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.303 seconds
+- Completed reload, in  1.304 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1315ms)
-		BeginReloadAssembly (231ms)
+	ReloadAssembly (1316ms)
+		BeginReloadAssembly (274ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (120ms)
-		EndReloadAssembly (955ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (155ms)
+		EndReloadAssembly (916ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (293ms)
+			SetupTypeCache (287ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (437ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (435ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (27ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (97ms)
-				ProcessInitializeOnLoadAttributes (274ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (259ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3390 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 24 unused Assets / (55.7 KB). Loaded Objects now: 3851.
 Memory consumption went from 118.3 MB to 118.2 MB.
-Total: 3.411700 ms (FindLiveObjects: 0.358500 ms CreateObjectMapping: 0.251000 ms MarkObjects: 2.712900 ms  DeleteObjects: 0.087700 ms)
+Total: 3.347800 ms (FindLiveObjects: 0.369400 ms CreateObjectMapping: 0.267600 ms MarkObjects: 2.636500 ms  DeleteObjects: 0.073300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,37 +162,23 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 106768.892481 seconds.
-  path: Assets/Prefabs/Main Menu.prefab
-  artifactKey: Guid(5d6c8bc5181732c4f834258e7d2210d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Main Menu.prefab using Guid(5d6c8bc5181732c4f834258e7d2210d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14af94859475cb33b22e04f4f708f95e') in 0.113999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/Canvas2.prefab
-  artifactKey: Guid(0940fce8130c5ce45a901db1d9a5dd57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Canvas2.prefab using Guid(0940fce8130c5ce45a901db1d9a5dd57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00fe54214a2e0afb7c7c16d26470c86c') in 0.042562 seconds 
+  Time since last request: 112045.871989 seconds.
+  path: Assets/Prefabs/SmallEnemy.prefab
+  artifactKey: Guid(5ffd38d85d65aab4b94b847fc4701b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SmallEnemy.prefab using Guid(5ffd38d85d65aab4b94b847fc4701b8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d613f8f0e2048b4600741dbcbe9d8a3') in 0.344044 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(601e51b6c3da2ac4c903f4afbe0a4bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(601e51b6c3da2ac4c903f4afbe0a4bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13a2b57962664174a530ab50ee8b298') in 0.083050 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Models/MapCorrectNormals.fbx
-  artifactKey: Guid(9f9cb18eb902b7d4d8d83f49a604c56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/MapCorrectNormals.fbx using Guid(9f9cb18eb902b7d4d8d83f49a604c56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d88ab5603a31bb8d0a472a7b98f0d9e') in 0.941858 seconds 
+  path: Assets/Prefabs/HarpoonGun.prefab
+  artifactKey: Guid(cc8b98b3629a24f499f76686d0b0bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/HarpoonGun.prefab using Guid(cc8b98b3629a24f499f76686d0b0bf23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '258596112f713f200a20ae8aaab4ef50') in 0.116113 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000035 seconds.
-  path: Assets/Prefabs/Harpoon.prefab
-  artifactKey: Guid(9365e2d9e4dd16842917f922d37f63d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Harpoon.prefab using Guid(9365e2d9e4dd16842917f922d37f63d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91abe2dae7c1e369349853bce2b7b21b') in 0.012136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
   path: Assets/Prefabs/Key Variant.prefab
   artifactKey: Guid(c58c617bf38856746b2fdba835c0cdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Key Variant.prefab using Guid(c58c617bf38856746b2fdba835c0cdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be309a515aa9f87c7c44bdd3a5d1869e') in 0.017882 seconds 
+Start importing Assets/Prefabs/Key Variant.prefab using Guid(c58c617bf38856746b2fdba835c0cdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be309a515aa9f87c7c44bdd3a5d1869e') in 0.029111 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

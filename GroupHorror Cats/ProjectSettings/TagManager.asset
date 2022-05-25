@@ -10,6 +10,9 @@ TagManager:
   - Console
   - Inventory
   - WinArea
+  - Environment
+  - Harpoon
+  - Ladder
   layers:
   - Default
   - TransparentFX
