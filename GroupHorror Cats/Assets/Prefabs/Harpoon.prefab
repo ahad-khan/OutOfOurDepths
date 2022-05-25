@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fcebeaee91e0c41987eb6ab0225905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 50
+  InEnemy: {fileID: 8300000, guid: e500a1445b36fee48a433c6f87136433, type: 3}
 --- !u!136 &2238181941071645608
 CapsuleCollider:
   m_ObjectHideFlags: 0
