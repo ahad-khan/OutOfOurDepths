@@ -29,5 +29,5 @@
 >"The Kraken", Alfred, Lord Tennyson*  
 
 ## LINKS  
-[Google Forms](https://forms.gle/ebgyTfRtrYXNBcaX6)
-[itch.io](https://ahad-khan.itch.io/out-of-our-depths)
+[Google Forms](https://forms.gle/ebgyTfRtrYXNBcaX6)  
+[itch.io](https://ahad-khan.itch.io/out-of-our-depths)  
