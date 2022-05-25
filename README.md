@@ -12,12 +12,12 @@
 *This game was created by students from University of Lincoln: Ahad Khan, Archie Minney, Max Truswell, Phoebe Mansfield and Rowan Halliwell for a Team Software Engineering Project.*
 
 ## Controls
-*MOVEMENT = WASD  
-CAMERA = MOUSE  
-ATTACK = LEFT CLICK  
-INTERACT = RIGHT CLICK  
-SWAP ITEM = SCROLL WHEEL  
-PAUSE = ESC*  
+- MOVEMENT = WASD  
+- CAMERA = MOUSE  
+- ATTACK = LEFT CLICK  
+- INTERACT = RIGHT CLICK  
+- SWAP ITEM = SCROLL WHEEL  
+- PAUSE = ESC  
 
 
 >*Below the thunders of the upper deep,  
