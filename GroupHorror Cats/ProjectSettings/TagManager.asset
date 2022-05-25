@@ -10,6 +10,8 @@ TagManager:
   - Console
   - Inventory
   - WinArea
+  - Harpoon
+  - Environment
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Radar
   - Radar2
   - AirRefill
-  - 
+  - Item
   - 
   - 
   - 
@@ -46,4 +48,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Radar
+    uniqueID: 1126105527
     locked: 0

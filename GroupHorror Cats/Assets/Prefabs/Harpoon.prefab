@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2238181941071645610}
   - component: {fileID: 2238181941071645604}
   - component: {fileID: 2238181941071645608}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: Harpoon
   m_TagString: Harpoon
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62fcebeaee91e0c41987eb6ab0225905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 75
 --- !u!136 &2238181941071645608
 CapsuleCollider:
   m_ObjectHideFlags: 0
