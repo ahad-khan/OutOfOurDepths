@@ -1,4 +1,4 @@
-![GAME LOGO] (https://github.com/ahad-khan/OutOfOurDepths/blob/main/banner_test.png?raw=true)
+![GAME LOGO] (banner_test.png)
 
 
 A short first-person horror survival game created in Unity, set in the depths of the pacific within a sunken research facility, using PSX aesthetics.
