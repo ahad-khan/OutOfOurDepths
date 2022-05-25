@@ -34,4 +34,11 @@ public class Harpoon : MonoBehaviour
             body.isKinematic = true;
         }
     }
+    void OnCollisionExit(Collision col)
+    {
+        if(col.gameObject.tag == "Enemy")
+        {
+            body.isKinematic = false;
+        }
+    }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Radar2 : MonoBehaviour
 {
-    //private Transform sweepTransform;
     [SerializeField]
     private float rotationSpeed = 100f;
     [SerializeField]
@@ -15,7 +14,7 @@ public class Radar2 : MonoBehaviour
     [SerializeField]
     private Transform mast;
     private List<Collider> collidedList;
-    [SerializeField]
+
     //private LayerMask layerMask;
 
 

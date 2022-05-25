@@ -25,6 +25,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (IsSmall)
         {
             centrepos = transform.position;
+            attackDamage = 5;
         }
     }
 
