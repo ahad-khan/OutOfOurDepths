@@ -104,8 +104,9 @@ public class PlayerMovement : MonoBehaviour
             HitObjects = Physics.OverlapSphere(Punch.position, PunchRange, AirObject);
             foreach (var hit in HitObjects)
             {
-                if (hit.gameObject.layer == LayerMask.NameToLayer("AirRefill")) { interacting = true; IsConsole = false; }
-                if (hit.gameObject.tag == "Console") { interacting = true; IsConsole = true; }
+                if (hit.gameObject.tag == "Console") { interacting = true; print("wooo"); IsConsole = true; break;}
+                if (hit.gameObject.layer == LayerMask.NameToLayer("AirRefill")) { interacting = true; print("waaa"); break; }
+                
             }
 
 
@@ -123,8 +124,10 @@ public class PlayerMovement : MonoBehaviour
                     {
                         GetComponent<Oxygen>().ChangeOxygenValue(100);
                     }
-                    else if (IsConsole == true && GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().KeyCount == 4)
+                    else if (GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().KeyCount == 4)
                     {
+                        print("yay");
+                        GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>().KeyCount = 0;
                         DOOR.SetActive(false);
                     }
 
