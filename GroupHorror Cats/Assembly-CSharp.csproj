@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\EnemyAudioController.cs" />
      <Compile Include="Assets\Scripts\RadarPing.cs" />
      <Compile Include="Assets\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\PSXShader\Scripts\PSXPostProcessEffect.cs" />
      <Compile Include="Assets\Scripts\TestScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Keys.cs" />
      <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
@@ -47,15 +48,14 @@
      <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
      <Compile Include="Assets\Scripts\Oxygen.cs" />
      <Compile Include="Assets\Scripts\healthBar.cs" />
+     <Compile Include="Assets\PSXShader\Scripts\PSXShaderManager.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\Radar2.cs" />
      <Compile Include="Assets\Scripts\Harpoon.cs" />
+     <Compile Include="Assets\PSXShader\Demo\PSXExample_CameraMovement.cs" />
      <Compile Include="Assets\Scripts\HarpoonGun.cs" />
      <Compile Include="Assets\Scripts\PlayerState.cs" />
      <Compile Include="Assets\Scripts\TestScripts\pauseMenu.cs" />
-     <Compile Include="Assets\PSXShader\Demo\PSXExample_CameraMovement.cs" />
-     <Compile Include="Assets\PSXShader\Scripts\PSXPostProcessEffect.cs" />
-     <Compile Include="Assets\PSXShader\Scripts\PSXShaderManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\PSXShader\Shaders\PSX-VertexLitTransparentCutout.shader" />
