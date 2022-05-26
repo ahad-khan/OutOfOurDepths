@@ -35,7 +35,10 @@ public class Harpoon : MonoBehaviour
         if(col.gameObject.tag == "Enemy")
         {
             source.clip = InEnemy;
-            transform.parent = col.transform;
+            if(col.gameObject.GetComponent<EnemyBehaviour>().IsSmall)
+            {
+                Destroy(col.gameObject);
+            }else transform.parent = col.transform;
         }else if (col.gameObject.tag != "Player")
         {
             //col.transform.Translate(depth * -Vector2.right); 

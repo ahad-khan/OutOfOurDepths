@@ -51,9 +51,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8ced89c2979a95f439a10edbe4edfd13, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ca0dc99c572b62e4eb1c4f03a81a9442, type: 2}
     - target: {fileID: 919132149155446097, guid: 8ced89c2979a95f439a10edbe4edfd13, type: 3}
       propertyPath: m_Name
-      value: OxygenTank
+      value: OxygenTank Variant
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ced89c2979a95f439a10edbe4edfd13, type: 3}
       propertyPath: m_Layer

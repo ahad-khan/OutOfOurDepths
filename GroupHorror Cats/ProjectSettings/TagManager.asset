@@ -12,6 +12,7 @@ TagManager:
   - WinArea
   - Harpoon
   - Environment
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - Radar2
   - AirRefill
   - Item
-  - 
+  - Console
   - 
   - 
   - 
